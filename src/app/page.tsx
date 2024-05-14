@@ -1,9 +1,11 @@
 import Header from "@/components/header";
+import Profile from "@/components/profile";
 
 const Home = () => {
   return (
-    <main id="main" className="flex justify-center w-full h-screen ">
-      <Header/>
+    <main className="w-full h-screen ">
+      <Header />
+      <Profile/>
     </main>
   );
 };

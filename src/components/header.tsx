@@ -10,18 +10,19 @@ import {
 import { Menu } from "lucide-react";
 
 const Header = () => {
-    return ( 
-        <header className="flex justify-between items-center w-3/4 h-32 ">
+  return (
+    <main className="flex justify-center">
+      <header className="flex justify-between items-center w-3/4 h-32 ">
         <p className="relative group cursor-pointer">
-          <span className="text-3xl">AW.</span>
+          <span className="text-3xl font-medium">AW.</span>
           <span className="absolute -bottom-1 left-0 w-0 h-2 bg-primary transition-all group-hover:w-full"></span>
         </p>
-        <nav className="hidden lg:block items-center" >
+        <nav className="hidden lg:block items-center">
           <ul className="flex gap-4 items-center">
             <a className="text-base cursor-pointer">Projetos</a>
             <a className="text-base cursor-pointer">Habilidades</a>
             <a className="text-base cursor-pointer mr-5">Contato</a>
-            <ModeToggle/>
+            <ModeToggle />
           </ul>
         </nav>
 
@@ -45,10 +46,11 @@ const Header = () => {
               </SheetHeader>
             </SheetContent>
           </Sheet>
-          <ModeToggle/>
-        </div> 
+          <ModeToggle />
+        </div>
       </header>
-     );
-}
- 
+    </main>
+  );
+};
+
 export default Header;
