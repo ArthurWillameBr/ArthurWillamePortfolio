@@ -46,4 +46,15 @@
     --ring: 263.4 70% 50.4%;
     --radius: 0.5rem;
   }
+
+  @layer base {
+    * {
+      @apply box-border;
+    }
+  
+    body {
+      @apply antialiased ;
+  
+    }
+  }
   
