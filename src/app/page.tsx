@@ -1,14 +1,11 @@
-import { ModeToggle } from "@/components/mode-toggle-theme";
-import { Button } from "@/components/ui/button";
+import Header from "@/components/header";
 
 const Home = () => {
-  return ( 
-    <main>
-      <Button >Click</Button>
-      <button>CLick</button>
-      <ModeToggle/>
+  return (
+    <main id="main" className="flex justify-center w-full h-screen ">
+      <Header/>
     </main>
-   );
-}
- 
+  );
+};
+
 export default Home;
