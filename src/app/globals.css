@@ -55,7 +55,7 @@
     }
   
     body {
-      @apply antialiased ;
+      @apply antialiased bg-background ;
   
     }
   }

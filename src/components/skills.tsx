@@ -12,15 +12,13 @@ import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 
 const Skills = () => {
-  if (!skills.length) return null;
-
   return (
     <div className="flex flex-col items-center justify-center">
       <h1 className="text-3xl pt-24 pb-14 font-semibold lg:text-4xl">Habilidades</h1>
       <Carousel
         plugins={[
           Autoplay({
-            delay: 2000,
+            delay: 1000,
           }),
         ]}
         opts={{
@@ -40,8 +38,6 @@ const Skills = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
       </Carousel>
     </div>
   );

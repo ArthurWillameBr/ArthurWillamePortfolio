@@ -1,30 +1,67 @@
 
-const projects = [
-  // projects can be added an removed
-  // if there are no projects, Projects section won't show up
+export const projects = [
   {
     name: "Project 1",
+    githubLink: "https://github.com",
+    deployLink: "https://github.com",
     description:
       "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam",
-    stack: ["SASS", "TypeScript", "React"],
-    sourceCode: "https://github.com",
-    livePreview: "https://github.com",
+    stacks: [
+    {
+      src: "/TypeScript.svg",
+      width: 26,
+      height: 26,
+      alt: "Imagem 1",
+    }, 
+    {
+      src: "/React-Dark.svg",
+      width: 26,
+      height: 26,
+      alt: "Imagem 1",
+    },
+    ],
   },
   {
-    name: "Project 2",
+    name: "Project 1",
+    githubLink: "https://github.com",
+    deployLink: "https://github.com",
     description:
       "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam",
-    stack: ["SASS", "TypeScript", "React"],
-    sourceCode: "https://github.com",
-    livePreview: "https://github.com",
+    stacks: [
+    {
+      src: "/TypeScript.svg",
+      width: 26,
+      height: 26,
+      alt: "Imagem 1",
+    }, 
+    {
+      src: "/React-Dark.svg",
+      width: 26,
+      height: 26,
+      alt: "Imagem 1",
+    },
+    ],
   },
   {
-    name: "Project 3",
+    name: "Project 1",
+    githubLink: "https://github.com",
+    deployLink: "https://github.com",
     description:
       "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam",
-    stack: ["SASS", "TypeScript", "React"],
-    sourceCode: "https://github.com",
-    livePreview: "https://github.com",
+    stacks: [
+    {
+      src: "/TypeScript.svg",
+      width: 26,
+      height: 26,
+      alt: "Imagem 1",
+    }, 
+    {
+      src: "/React-Dark.svg",
+      width: 26,
+      height: 26,
+      alt: "Imagem 1",
+    },
+    ],
   },
 ];
 
