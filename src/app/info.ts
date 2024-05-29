@@ -1,4 +1,3 @@
-
 export const projects = [
   {
     name: "Project 1",
@@ -11,13 +10,13 @@ export const projects = [
       src: "/TypeScript.svg",
       width: 26,
       height: 26,
-      alt: "Imagem 1",
+      alt: "TypeScript",
     }, 
     {
       src: "/React-Dark.svg",
       width: 26,
       height: 26,
-      alt: "Imagem 1",
+      alt: "React",
     },
     ],
   },
@@ -65,108 +64,126 @@ export const projects = [
   },
 ];
 
+export const socialLinks = [
+  {
+    id: 1,
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/arthur-willame-1b5a3a1b5/",
+  },
+  {
+    id: 2,
+    name: "Github",
+    link: "https://www.github.com"
+  },
+  {
+    id: 3,
+    name: "Email",
+    link: "email"
+  }
+]
+
 export const skills = [
   {
     src: "/TypeScript.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "TypeScript",
   },
   {
     src: "/JavaScript.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "JavaScript",
   },
   {
     src: "/Python-Dark.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "Python",
   },
   {
     src: "/React-Dark.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "React",
   },
   {
     src: "/NextJS-Dark.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "NextJS",
   },
   {
     src: "/Redux.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "Redux",
   },
   {
     src: "/TailwindCSS-Dark.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "TailwindCSS",
   },
   {
     src: "/StyledComponents.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "StyledComponents",
   },
   {
     src: "/NodeJS-Dark.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "NodeJS",
   },
   {
     src: "/ExpressJS-Dark.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "ExpressJS",
   },
   {
     src: "/PostgreSQL-Dark.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "PostgreSQL",
   },
   {
     src: "/MongoDB.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "MongoDB",
   },
   {
     src: "/Prisma.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "Prisma",
   },
   {
     src: "/Docker.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "Docker",
   },
   {
     src: "/Git.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "Git",
   },
   {
     src: "/HTML.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "HTML",
   },
   {
     src: "/CSS.svg",
     width: 800,
     height: 600,
-    alt: "Imagem 1",
+    alt: "CSS",
   },
  
 ];
