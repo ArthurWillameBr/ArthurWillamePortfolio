@@ -1,23 +1,31 @@
 import { Button } from "./ui/button";
+import { SocialMedia } from "./socialMedia";
 
 const Profile = () => {
+
   return (
-    <section className="flex flex-col items-center text-center mt-10 gap-5 ">
+    <section className="flex flex-col items-center justify-center text-center gap-5 ">
       <h1 className="text-3xl lg:text-5xl font-bold">
-        Olá, eu sou o <span className="text-primary"> Arthur Willame</span>
+        Olá, eu sou o <span className=""> Arthur Willame</span>
       </h1>
       <h3 className=" text-2xl lg:text-3xl font-semibold">
-        Um Engenheiro De Software
+        Desenvolvedor <span className="text-primary">Front-end</span>
       </h3>
-      <div className="w-96 lg:w-[30rem]">
-        <p className="text-sm opacity-70 font-medium">
-          Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis
-          perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus
-          modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores
-          minima consectetur.
+      <div className="w-96 lg:w-[40rem]">
+        <p className="text- opacity-75 font-medium">
+          Tive o meu primeiro contanto com linhas de código aos 17 anos,
+          estudando javascript e lógica de programação. Essa experiência me
+          proporcionou uma imersão fascinante no universo do desenvolvimento.
+          Desde então eu decidi que queria fazer isso na minha vida - eu queria
+          ser um programador. Venho me aprimorando e estudando diariamente seja
+          por meio da faculdade, criação de projetos pessoas, ou por cursos
+          online. Meu foco é o desenvolvimento web.
         </p>
       </div>
       <div className="mt-4">
+        <div className="flex gap-2 items-center justify-center mb-4">
+          <SocialMedia/>
+        </div>
         <Button
           variant="outline"
           className="relative inline-flex items-center overflow-hidden transition-all group border-2 border-primary"
