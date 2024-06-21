@@ -5,12 +5,12 @@ import Skills from "@/components/skills";
 
 const Home = () => {
   return (
-    <main className="w-full h-screen">
-      <Header />
-      <Profile />
-      <Skills />
-      <Projects/>
-    </main>
+      <main className="space-y-20">
+        <Header />
+        <Profile />
+        <Skills />
+        <Projects />
+      </main>
   );
 };
 
