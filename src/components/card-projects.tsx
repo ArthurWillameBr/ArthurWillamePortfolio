@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/tooltip";
 import { Github, LinkIcon } from "lucide-react";
 import Image from "next/image";
-import { CarouselItem } from "./carousel";
+import { CarouselItem } from "../components/ui/carousel";
 import Link from "next/link";
 
 export interface ProjectsProps {

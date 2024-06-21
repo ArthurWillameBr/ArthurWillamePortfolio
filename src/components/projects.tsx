@@ -5,7 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { CardProjects } from "./ui/card-projects";
+import { CardProjects } from "./card-projects";
 import { projects } from "@/app/info";
 
 

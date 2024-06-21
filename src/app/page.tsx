@@ -5,8 +5,8 @@ import Skills from "@/components/skills";
 
 const Home = () => {
   return (
-      <main className="space-y-20">
-        <Header />
+      <main className="space-y-20 container">
+        <Header /> 
         <Profile />
         <Skills />
         <Projects />
