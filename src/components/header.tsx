@@ -8,6 +8,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import { Button } from "./ui/button";
 
 const Header = () => {
   return (
@@ -28,25 +29,38 @@ const Header = () => {
 
         <div className="lg:hidden">
           <Sheet>
-            <SheetTrigger className="mr-5">
+            <SheetTrigger>
               <Menu />
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
-                <SheetTitle className="text-left text-xl ">Menu</SheetTitle>
-                <SheetDescription>
-                  <nav>
-                    <ul className="flex flex-col text-left space-y-5 mt-4">
-                      <li className="text-base mx-4">Projetos</li>
-                      <li className="text-base mx-4">Habilidades</li>
-                      <li className="text-base mx-4">Contato</li>
-                    </ul>
-                  </nav>
+                <SheetTitle className="text-left text-xl">Menu</SheetTitle>
+                <SheetDescription className="flex flex-col justify-end space-y-5 mt-5 text-left">
+                  <Button
+                    variant="link"
+                    className="text-lg dark:text-violet-500"
+                  >
+                    Projetos
+                  </Button>
+                  <Button
+                    variant="link"
+                    className="text-lg dark:text-violet-500"
+                  >
+                    Habilidades
+                  </Button>
+                  <Button
+                    variant="link"
+                    className="text-lg dark:text-violet-500"
+                  >
+                    Contato
+                  </Button>
+                  <div className="lg:hidden">
+                    <ModeToggle />
+                  </div>
                 </SheetDescription>
               </SheetHeader>
             </SheetContent>
           </Sheet>
-          <ModeToggle />
         </div>
       </header>
     </main>

@@ -11,8 +11,8 @@ const Profile = () => {
       <h3 className=" text-2xl lg:text-3xl font-semibold">
         Desenvolvedor <span className="text-primary">Front-end</span>
       </h3>
-      <div className="w-96 lg:w-[40rem]">
-        <p className="text- opacity-75 font-medium">
+      <div className="w-80 lg:w-[40rem]">
+        <p className="opacity-75 font-medium">
           Tive o meu primeiro contanto com linhas de código aos 17 anos,
           estudando javascript e lógica de programação. Essa experiência me
           proporcionou uma imersão fascinante no universo do desenvolvimento.
