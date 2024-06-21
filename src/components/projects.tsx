@@ -17,12 +17,12 @@ const Projects = () => {
           Projetos
         </h1>
       </div>
-      <div className="flex items-center justify-center">
-        <Carousel className="w-full max-w-xs ">
-            <CarouselContent>
+      <div className="flex items-center justify-center px-10">
+        <Carousel className="w-full max-w-xs pl-0 ">
+            <CarouselContent className="pl-0">
                 <CardProjects projects={projects} />
             </CarouselContent>
-          <CarouselPrevious />
+          <CarouselPrevious/>
           <CarouselNext />
         </Carousel>
       </div>
