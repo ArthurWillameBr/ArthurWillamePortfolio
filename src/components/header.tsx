@@ -14,7 +14,7 @@ const Header = () => {
     <main className="flex justify-center">
       <header className="flex justify-between items-center w-3/4 h-32 ">
         <p className="relative group cursor-pointer">
-          <span className="text-3xl font-medium">AW.</span>
+          <span className="text-2xl font-medium">AW.</span>
           <span className="absolute -bottom-1 left-0 w-0 h-2 bg-primary transition-all group-hover:w-full"></span>
         </p>
         <nav className="hidden lg:block items-center">
