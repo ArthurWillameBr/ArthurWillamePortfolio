@@ -1,11 +1,20 @@
+import { v4 as uuidv4 } from "uuid";
+
 export const projects = [
   {
-    name: "Project 1",
-    githubLink: "https://github.com",
-    deployLink: "https://github.com",
+    id: uuidv4(),
+    name: "Easy Store",
+    deployLink: "https://easystorehub.vercel.app/",
+    githubLink: "https://github.com/ArthurWillameBr/EasyStore",
     description:
-      "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam",
+      "E-commerce de periféricos para games com autenticação via NextAuth e integração com Stripe",
     stacks: [
+      {
+        src: "/NextJS-Dark.svg",
+        width: 26,
+        height: 26,
+        alt: "NextJS",
+      },
     {
       src: "/TypeScript.svg",
       width: 26,
@@ -13,14 +22,34 @@ export const projects = [
       alt: "TypeScript",
     }, 
     {
-      src: "/React-Dark.svg",
+      src: "/TailwindCSS-Dark.svg",
       width: 26,
       height: 26,
-      alt: "React",
+      alt: "TailwindCSS",
     },
+    {
+      src: "/Shandcn-ui.png",
+      width: 26,
+      height: 26,
+      alt: "Shandcn-ui",
+    },
+    {
+      src: "/Prisma.svg",
+      width: 26,
+      height: 26,
+      alt: "Prisma",
+    },
+    {
+      src: "/PostgreSQL-Dark.svg",
+      width: 26,
+      height: 26,
+      alt: "Postgres",
+    },
+   
     ],
   },
   {
+     id: uuidv4(),
     name: "Project 1",
     githubLink: "https://github.com",
     deployLink: "https://github.com",
@@ -42,6 +71,7 @@ export const projects = [
     ],
   },
   {
+    id: uuidv4(),
     name: "Project 1",
     githubLink: "https://github.com",
     deployLink: "https://github.com",
@@ -64,21 +94,22 @@ export const projects = [
   },
 ];
 
+
 export const socialLinks = [
   {
     id: 1,
     name: "Linkedin",
-    link: "https://www.linkedin.com/in/arthur-willame-1b5a3a1b5/",
+    link: "https://www.linkedin.com/in/arthur-willame-14716b28b/",
   },
   {
     id: 2,
-    name: "Github",
-    link: "https://www.github.com"
+    name: "GitHub",
+    link: "https://github.com/ArthurWillameBr"
   },
   {
     id: 3,
     name: "Email",
-    link: "email"
+    link: "mailto:arthurwillame2017@gmail.com"
   }
 ]
 
