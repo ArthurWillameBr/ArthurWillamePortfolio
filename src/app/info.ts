@@ -1,11 +1,27 @@
 import { v4 as uuidv4 } from "uuid";
 
-export const projects = [
+export interface ProjectsProps {
+  id: string;
+  name: string;
+  description: string;
+  deployLink: string;
+  githubLink: string;
+  linkedinLink: string;
+  stacks: {
+    src: string;
+    width: number;
+    height: number;
+    alt: string;
+  }[];
+}
+
+export const projects  = [
   {
     id: uuidv4(),
     name: "Easy Store",
     deployLink: "https://easystorehub.vercel.app/",
     githubLink: "https://github.com/ArthurWillameBr/EasyStore",
+    linkedinLink: "https://www.linkedin.com/in/arthur-willame-14716b28b/",
     description:
       "E-commerce de periféricos para games com autenticação via NextAuth e integração com Stripe",
     stacks: [
@@ -53,6 +69,7 @@ export const projects = [
     name: "Project 1",
     githubLink: "https://github.com",
     deployLink: "https://github.com",
+    linkedinLink: "https://www.linkedin.com/in/arthur-willame-14716b28b/",
     description:
       "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam",
     stacks: [
@@ -75,6 +92,7 @@ export const projects = [
     name: "Project 1",
     githubLink: "https://github.com",
     deployLink: "https://github.com",
+    linkedinLink: "https://www.linkedin.com/in/arthur-willame-14716b28b/",
     description:
       "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam",
     stacks: [
