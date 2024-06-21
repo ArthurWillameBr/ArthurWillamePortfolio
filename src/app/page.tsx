@@ -5,7 +5,7 @@ import Skills from "@/components/skills";
 
 const Home = () => {
   return (
-      <main className="space-y-20 container">
+      <main className="flex flex-col justify-center mx-auto min-h-screen px-3 w-full max-w-[1600px]">
         <Header /> 
         <Profile />
         <Skills />
