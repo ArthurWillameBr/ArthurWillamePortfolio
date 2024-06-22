@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ModeToggle } from "@/components/mode-toggle-theme";
 import {
@@ -16,13 +16,13 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <motion.main className="flex justify-center" 
-    initial={{ opacity: 0, x: -100 }}
-    whileInView={{ opacity: 1, x: 0}}
-    exit={{ opacity: 0, x: -100 }}
-    transition={{ duration: 0.5 }}
-    >
-      <header className="flex justify-between items-center w-3/4 h-32 ">
+    <main className="flex justify-center">
+      <motion.header
+       initial={{ opacity: 0, x: -100 }}
+       animate={{ opacity: 1, x: 0}}
+        transition={{ duration: 0.5 }}
+        className="flex justify-between items-center w-3/4 h-32 "
+      >
         <p className="relative group cursor-pointer">
           <span className="text-2xl font-medium tracking-tighter">AW.</span>
           <span className="absolute -bottom-1 left-0 w-0 h-2 bg-primary transition-all group-hover:w-full"></span>
@@ -71,8 +71,8 @@ const Header = () => {
             </SheetContent>
           </Sheet>
         </div>
-      </header>
-    </motion.main>
+      </motion.header>
+    </main>
   );
 };
 
