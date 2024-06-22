@@ -94,7 +94,7 @@ export const projects  = [
     deployLink: "https://github.com",
     linkedinLink: "https://www.linkedin.com/in/arthur-willame-14716b28b/",
     description:
-      "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam",
+      "Amet asperiores et impedit aliquam consectetur? ",
     stacks: [
     {
       src: "/TypeScript.svg",

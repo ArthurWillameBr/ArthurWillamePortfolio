@@ -24,7 +24,7 @@ export function CardProjects({ projects }: { projects: ProjectsProps[]}) {
       {projects.map((project, index) => (
         <CarouselItem key={index}>
             <TooltipProvider>
-                  <Card className="ml-4 w-[246px] h-[340px] bg-muted text-muted-foreground">
+                  <Card className="bg-muted text-muted-foreground h-[300px]">
                     <CardHeader>
                       <div className="flex justify-between items-center">
                         <div>
@@ -65,7 +65,7 @@ export function CardProjects({ projects }: { projects: ProjectsProps[]}) {
                       <CardDescription>{project.description}</CardDescription>
                     </CardContent>
                     <hr className="mx-5 opacity-80" />
-                    <CardFooter className="flex items-end justify-between mt-2">
+                    <CardFooter className="flex items-center justify-center pt-1 gap-3">
                       {project.stacks.map((stack, index) => (
                         <Tooltip key={index}>
                           <TooltipTrigger>
