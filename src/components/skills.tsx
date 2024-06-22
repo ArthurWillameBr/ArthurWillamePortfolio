@@ -9,10 +9,18 @@ import { skills } from "../app/data";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 
+import { motion } from "framer-motion"
+
 const Skills = () => {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center">
-      <h1 className="text-3xl mb-7 font-semibold lg:text-4xl tracking-tight">Habilidades</h1>
+      <motion.h1
+       className="text-3xl py-10 font-semibold lg:text-4xl tracking-tight"
+       initial={{ opacity: 0, x: -100 }}
+       whileInView={{ opacity: 1, x: 0}}
+       exit={{ opacity: 0, x: -100 }}
+       transition={{ duration: 0.5 }}
+       >Habilidades</motion.h1>
       <Carousel
         plugins={[
           Autoplay({
