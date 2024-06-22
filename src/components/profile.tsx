@@ -19,7 +19,7 @@ const Profile = () => {
         Olá, eu sou o <span className=""> Arthur Willame</span>
       </h1>
       <h3 className=" text-2xl lg:text-3xl font-semibold tracking-tight">
-        Desenvolvedor <span className="text-primary">Front-end</span>
+        Desenvolvedor <span className="text-primary dark:text-violet-600">Front-end</span>
       </h3>
       <div className="w-96 lg:w-[40rem] px-5">
         <p className="opacity-75 font-medium">
