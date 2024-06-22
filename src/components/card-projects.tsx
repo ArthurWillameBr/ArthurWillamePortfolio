@@ -15,7 +15,7 @@ import {
 import { Github, LinkIcon, Linkedin } from "lucide-react";
 import Image from "next/image";
 import { CarouselItem } from "../components/ui/carousel";
-import { ProjectsProps } from "@/app/info";
+import { ProjectsProps } from "@/app/data";
 
 
 export function CardProjects({ projects }: { projects: ProjectsProps[]}) {

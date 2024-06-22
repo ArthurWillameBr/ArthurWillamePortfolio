@@ -2,13 +2,12 @@ import { Button } from "./ui/button";
 import { SocialMedia } from "./socialMedia";
 
 const Profile = () => {
-
   return (
-    <section className="flex flex-col items-center justify-center text-center gap-5 ">
-      <h1 className="text-3xl lg:text-5xl font-bold">
+    <main  style={{ minHeight: 'calc(100vh - 188px)' }} className="flex flex-col items-center justify-center text-center gap-5 ">
+      <h1 className="text-3xl lg:text-5xl font-bold tracking-tight">
         Olá, eu sou o <span className=""> Arthur Willame</span>
       </h1>
-      <h3 className=" text-2xl lg:text-3xl font-semibold">
+      <h3 className=" text-2xl lg:text-3xl font-semibold tracking-tight">
         Desenvolvedor <span className="text-primary">Front-end</span>
       </h3>
       <div className="w-96 lg:w-[40rem] px-5">
@@ -36,7 +35,7 @@ const Profile = () => {
           </span>
         </Button>
       </div>
-    </section>
+    </main>
   );
 };
 

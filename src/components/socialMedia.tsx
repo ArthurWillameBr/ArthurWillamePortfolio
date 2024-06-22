@@ -1,4 +1,4 @@
-import { socialLinks } from "@/app/info";
+import { socialLinks } from "@/app/data";
 import {
   Tooltip,
   TooltipContent,
