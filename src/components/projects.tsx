@@ -6,7 +6,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { CardProjects } from "./card-projects";
-import { projects } from "@/app/info";
+import { projects } from "@/app/data";
 
 
 const Projects = () => {
@@ -17,13 +17,11 @@ const Projects = () => {
           Projetos
         </h1>
       </div>
-      <div className="flex items-center justify-center px-10">
-        <Carousel className="w-full max-w-xs pl-0 ">
-            <CarouselContent className="pl-0">
+      <div className="flex justify-center items-center mx-auto">
+        <Carousel className="w-full max-w-xs">
+            <CarouselContent>
                 <CardProjects projects={projects} />
             </CarouselContent>
-          <CarouselPrevious/>
-          <CarouselNext />
         </Carousel>
       </div>
     </main>
