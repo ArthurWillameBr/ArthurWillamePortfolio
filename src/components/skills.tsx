@@ -11,8 +11,8 @@ import Autoplay from "embla-carousel-autoplay";
 
 const Skills = () => {
   return (
-    <main className="flex flex-col items-center justify-center">
-      <h1 className="text-3xl pt-24 pb-14 font-semibold lg:text-4xl">Habilidades</h1>
+    <main className="min-h-screen flex flex-col items-center justify-center">
+      <h1 className="text-3xl mb-7 font-semibold lg:text-4xl tracking-tight">Habilidades</h1>
       <Carousel
         plugins={[
           Autoplay({
