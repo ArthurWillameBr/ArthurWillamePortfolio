@@ -1,3 +1,4 @@
+import BackToTop from "@/components/back-to-top";
 import Header from "@/components/header";
 import Profile from "@/components/profile";
 import Projects from "@/components/projects";
@@ -10,6 +11,7 @@ const Home = () => {
         <Profile />
         <Skills />
         <Projects />
+        <BackToTop/>
       </main>
   );
 };
