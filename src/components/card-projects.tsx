@@ -27,12 +27,7 @@ export function CardProjects({ projects }: { projects: ProjectsProps[] }) {
       {projects.map((project, index) => (
         <CarouselItem key={index}>
           <TooltipProvider>
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 100 }}
-              transition={{ duration: 0.5 }}
-            >
+            <div>
               <Card className="bg-muted text-muted-foreground h-[300px]">
                 <CardHeader>
                   <div className="flex justify-between items-center">
@@ -97,7 +92,7 @@ export function CardProjects({ projects }: { projects: ProjectsProps[] }) {
                   ))}
                 </CardFooter>
               </Card>
-            </motion.div>
+            </div>
           </TooltipProvider>
         </CarouselItem>
       ))}
