@@ -10,19 +10,12 @@ import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 
 import { motion } from "framer-motion";
+import SectionTitle from "./section-title";
 
 const Skills = () => {
   return (
     <main id="skills" className="min-h-screen flex flex-col items-center justify-center">
-      <motion.h1
-        className="text-3xl py-10 font-semibold lg:text-4xl tracking-tight"
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -100 }}
-        transition={{ duration: 0.5 }}
-      >
-        Habilidades
-      </motion.h1>
+      <SectionTitle title="Habilidades"/>
       <Carousel
         plugins={[
           Autoplay({

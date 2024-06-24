@@ -9,21 +9,13 @@ import { CardProjects } from "./card-projects";
 import { projects } from "@/app/data";
 
 import { motion } from "framer-motion";
+import SectionTitle from "./section-title";
 
 const Projects = () => {
   return (
-    <main className="mb-36 mt-36">
+    <main className="min-h-screen">
       <div className="flex items-center justify-center">
-        <motion.h1
-          id="projects" 
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5 }}
-          className="text-3xl mb-10 font-semibold lg:text-4xl"
-        >
-          Projetos
-        </motion.h1>
+        <SectionTitle title="Projetos"/>
       </div>
       <div className="flex justify-center items-center mx-auto px-8">
         <Carousel className="max-w-64">
