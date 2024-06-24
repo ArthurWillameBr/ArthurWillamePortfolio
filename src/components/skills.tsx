@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center">
+    <main id="skills" className="min-h-screen flex flex-col items-center justify-center">
       <motion.h1
         className="text-3xl py-10 font-semibold lg:text-4xl tracking-tight"
         initial={{ opacity: 0, x: -100 }}
