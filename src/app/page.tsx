@@ -1,4 +1,5 @@
 import BackToTop from "@/components/back-to-top";
+import ContactForm from "@/components/contact-form";
 import Header from "@/components/header";
 import Profile from "@/components/profile";
 import Projects from "@/components/projects";
@@ -11,6 +12,7 @@ const Home = () => {
         <Profile />
         <Skills />
         <Projects />
+        <ContactForm/>
         <BackToTop/>
       </main>
   );
