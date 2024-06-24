@@ -6,7 +6,7 @@ import { MoveRight } from "lucide-react";
 
 const ContactForm = () => {
     return ( 
-        <main className="flex flex-col gap-6 justify-center items-center min-h-screen ">
+        <main id="contact" className="flex flex-col gap-6 justify-center items-center min-h-screen ">
             <div className="text-center">
                 <SectionTitle title="Vamos trabalhar juntos? "/>
                 <h3 className="text-2xl">Entre em contato</h3>

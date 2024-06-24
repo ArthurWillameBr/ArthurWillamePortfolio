@@ -12,7 +12,7 @@ import SectionTitle from "./section-title";
 
 const Projects = () => {
   return (
-    <main id="contact" className="flex flex-col items-center justify-center min-h-screen">
+    <main id="projects" className="flex flex-col items-center justify-center min-h-screen">
       <div className="mb-10">
         <SectionTitle title="Projetos"/>
       </div>
