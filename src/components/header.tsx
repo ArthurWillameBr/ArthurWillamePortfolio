@@ -27,15 +27,20 @@ const Header = () => {
     scrollToSection("projects");
   };
 
+  const handleSkills = () => {
+    scrollToSection("skills");
+  };
+
+  const handleContact = () => {
+    scrollToSection("contact");
+  };
+
   const handleSheetCloseAndScroll = (sectionId: string) => {
     setTimeout(() => {
       scrollToSection(sectionId);
     }, 300);
   };
 
-  const handleSkills = () => {
-    scrollToSection("skills");
-  };
 
   return (
     <main className="flex justify-center">
@@ -51,13 +56,13 @@ const Header = () => {
         </p>
         <nav className="hidden lg:block items-center">
           <ul className="flex gap-4 items-center">
-            <a className="text-base cursor-pointer" onClick={handleProjects}>
-              Projetos
-            </a>
             <a className="text-base cursor-pointer" onClick={handleSkills}>
               Habilidades
             </a>
-            <a className="text-base cursor-pointer mr-5">Contato</a>
+            <a className="text-base cursor-pointer" onClick={handleProjects}>
+              Projetos
+            </a>
+            <a className="text-base cursor-pointer mr-5" onClick={handleContact}>Contato</a>
             <ModeToggle />
           </ul>
         </nav>
@@ -91,6 +96,7 @@ const Header = () => {
                   </SheetClose>
 
                   <Button
+                  onClick={() => handleSheetCloseAndScroll("contact")}
                     variant="link"
                     className="text-lg dark:text-violet-500"
                   >
