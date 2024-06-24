@@ -3,6 +3,7 @@
 import { ModeToggle } from "@/components/mode-toggle-theme";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,
@@ -15,11 +16,32 @@ import { Button } from "./ui/button";
 import { motion } from "framer-motion";
 
 const Header = () => {
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleProjects = () => {
+    scrollToSection("projects");
+  };
+
+  const handleSheetCloseAndScroll = (sectionId: string) => {
+    setTimeout(() => {
+      scrollToSection(sectionId);
+    }, 300);
+  };
+
+  const handleSkills = () => {
+    scrollToSection("skills");
+  };
+
   return (
     <main className="flex justify-center">
       <motion.header
-       initial={{ opacity: 0, x: -100 }}
-       animate={{ opacity: 1, x: 0}}
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
         className="flex justify-between items-center w-3/4 h-32 "
       >
@@ -29,8 +51,12 @@ const Header = () => {
         </p>
         <nav className="hidden lg:block items-center">
           <ul className="flex gap-4 items-center">
-            <a className="text-base cursor-pointer">Projetos</a>
-            <a className="text-base cursor-pointer">Habilidades</a>
+            <a className="text-base cursor-pointer" onClick={handleProjects}>
+              Projetos
+            </a>
+            <a className="text-base cursor-pointer" onClick={handleSkills}>
+              Habilidades
+            </a>
             <a className="text-base cursor-pointer mr-5">Contato</a>
             <ModeToggle />
           </ul>
@@ -45,18 +71,25 @@ const Header = () => {
               <SheetHeader>
                 <SheetTitle className="text-left text-xl">Menu</SheetTitle>
                 <SheetDescription className="flex flex-col justify-end space-y-5 mt-5 text-left">
-                  <Button
-                    variant="link"
-                    className="text-lg dark:text-violet-500"
-                  >
-                    Projetos
-                  </Button>
-                  <Button
-                    variant="link"
-                    className="text-lg dark:text-violet-500"
-                  >
-                    Habilidades
-                  </Button>
+                  <SheetClose asChild>
+                    <Button
+                      onClick={() => handleSheetCloseAndScroll("skills")}
+                      variant="link"
+                      className="text-lg dark:text-violet-500"
+                    >
+                      Habilidades
+                    </Button>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Button
+                      onClick={() => handleSheetCloseAndScroll("projects")}
+                      variant="link"
+                      className="text-lg dark:text-violet-500"
+                    >
+                      Projetos
+                    </Button>
+                  </SheetClose>
+
                   <Button
                     variant="link"
                     className="text-lg dark:text-violet-500"
