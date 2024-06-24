@@ -12,9 +12,10 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <main className="h-screen">
+    <main className="mb-36 mt-36">
       <div className="flex items-center justify-center">
         <motion.h1
+          id="projects" 
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
