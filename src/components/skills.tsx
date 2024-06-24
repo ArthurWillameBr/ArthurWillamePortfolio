@@ -15,7 +15,10 @@ import SectionTitle from "./section-title";
 const Skills = () => {
   return (
     <main id="skills" className="min-h-screen flex flex-col items-center justify-center">
+      <div className="mb-10">
       <SectionTitle title="Habilidades"/>
+
+      </div>
       <Carousel
         plugins={[
           Autoplay({
