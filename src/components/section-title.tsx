@@ -14,7 +14,7 @@ const SectionTitle = ({title}: SectionTitleProps) => {
         whileInView={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.5 }}
-        className="text-3xl mb-10 font-semibold lg:text-4xl"
+        className="text-3xl font-semibold lg:text-4xl"
       >
         {title}
       </motion.h1>
