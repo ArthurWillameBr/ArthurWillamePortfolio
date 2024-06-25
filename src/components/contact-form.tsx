@@ -9,6 +9,7 @@ import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
+import axios from "axios";
 
 const ContactFormSchema = z.object({
   name: z.string().nonempty(),
@@ -19,14 +20,22 @@ const ContactFormSchema = z.object({
 type ContactFormValues = z.infer<typeof ContactFormSchema>;
 
 const ContactForm = () => {
-  const { register, handleSubmit, reset, formState: {isSubmitting} } = useForm<ContactFormValues>({
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { isSubmitting },
+  } = useForm<ContactFormValues>({
     resolver: zodResolver(ContactFormSchema),
   });
 
-  const onSubmitMessage = (data: ContactFormValues) => {
-    console.log(data);
-
-    reset();
+  const onSubmitMessage = async ({email, message, name}: ContactFormValues) => {
+    try {
+      await axios.post("/api/contact", {email, message, name});
+      reset();
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -57,7 +66,11 @@ const ContactForm = () => {
         <Input placeholder="Nome" {...register("name")} />
         <Input placeholder="E-mail" {...register("email")} />
         <Textarea placeholder="Mensagem" {...register("message")} />
-        <Button type="submit" className="flex gap-1 items-center" disabled={isSubmitting}>
+        <Button
+          type="submit"
+          className="flex gap-1 items-center"
+          disabled={isSubmitting}
+        >
           Enviar mensagem
           <MoveRight size={18} />
         </Button>
