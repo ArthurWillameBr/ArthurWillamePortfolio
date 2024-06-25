@@ -10,6 +10,9 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
 import axios from "axios";
+import { Toaster } from "./ui/toaster";
+import { useToast } from "./ui/use-toast";
+
 
 const ContactFormSchema = z.object({
   name: z.string().nonempty(),
@@ -29,14 +32,24 @@ const ContactForm = () => {
     resolver: zodResolver(ContactFormSchema),
   });
 
+  const showSuccessToast = () => {
+    toast({
+      title: "Mensagem enviada com sucesso!",
+      description: "Em breve entrarei em contato com você.",
+    });
+  }
+
   const onSubmitMessage = async ({email, message, name}: ContactFormValues) => {
     try {
       await axios.post("/api/contact", {email, message, name});
+      showSuccessToast()
       reset();
     } catch (error) {
       console.error(error);
     }
   };
+
+  const { toast } = useToast()
 
   return (
     <main
@@ -57,7 +70,7 @@ const ContactForm = () => {
       </div>
       <motion.form
         onSubmit={handleSubmit(onSubmitMessage)}
-        className="flex flex-col space-y-3 w-[320px]"
+        className="flex flex-col space-y-3 w-[320px] "
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 100 }}
@@ -75,6 +88,8 @@ const ContactForm = () => {
           <MoveRight size={18} />
         </Button>
       </motion.form>
+
+      <Toaster />
     </main>
   );
 };
