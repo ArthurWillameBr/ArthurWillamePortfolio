@@ -39,24 +39,36 @@ export function CardProjects({ projects }: { projects: ProjectsProps[] }) {
                     <div className="flex items-center gap-4">
                       <Tooltip>
                         <TooltipTrigger asChild>
-                          <a href={project.deployLink}>
-                            <LinkIcon className="size-4 mt-2" />
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={project.deployLink}
+                          >
+                            <LinkIcon className="size-5 mt-2 hover:scale-110" />
                           </a>
                         </TooltipTrigger>
                         <TooltipContent>Deploy</TooltipContent>
                       </Tooltip>
                       <Tooltip>
                         <TooltipTrigger asChild>
-                          <a href={project.githubLink}>
-                            <Github className="mt-2" />
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={project.githubLink}
+                          >
+                            <Github className=" mt-2 hover:scale-110" />
                           </a>
                         </TooltipTrigger>
                         <TooltipContent>Repositório</TooltipContent>
                       </Tooltip>
                       <Tooltip>
                         <TooltipTrigger asChild>
-                          <a href={project.linkedinLink}>
-                            <Linkedin className="size-4 mt-2" />
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={project.linkedinLink}
+                          >
+                            <Linkedin className="size-5 mt-2 hover:scale-110" />
                           </a>
                         </TooltipTrigger>
                         <TooltipContent>Linkedin</TooltipContent>
