@@ -19,7 +19,7 @@ const ContactFormSchema = z.object({
 type ContactFormValues = z.infer<typeof ContactFormSchema>;
 
 const ContactForm = () => {
-  const { register, handleSubmit, reset } = useForm<ContactFormValues>({
+  const { register, handleSubmit, reset, formState: {isSubmitting} } = useForm<ContactFormValues>({
     resolver: zodResolver(ContactFormSchema),
   });
 
@@ -57,7 +57,7 @@ const ContactForm = () => {
         <Input placeholder="Nome" {...register("name")} />
         <Input placeholder="E-mail" {...register("email")} />
         <Textarea placeholder="Mensagem" {...register("message")} />
-        <Button type="submit" className="flex gap-1 items-center ">
+        <Button type="submit" className="flex gap-1 items-center" disabled={isSubmitting}>
           Enviar mensagem
           <MoveRight size={18} />
         </Button>
