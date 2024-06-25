@@ -55,7 +55,7 @@
     }
   
     body {
-      @apply antialiased bg-background ;
+      @apply antialiased bg-background transition-colors duration-300 ;
   
     }
   }
