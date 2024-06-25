@@ -6,7 +6,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "../components/ui/tooltip";
+} from "./ui/tooltip";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 import { motion } from "framer-motion"
@@ -16,7 +16,7 @@ export function SocialMedia() {
    <>
    {socialLinks.map((socialLink, index) => {
      return (
-       <motion.main
+       <motion.div
        className="flex"
        key={socialLink.id}
        initial={{ opacity: 0, scale: 0}}
@@ -47,7 +47,7 @@ export function SocialMedia() {
            <TooltipContent>{socialLink.name}</TooltipContent>
          </Tooltip>
        </TooltipProvider>
-       </motion.main>
+       </motion.div>
      );
    })}
    </>

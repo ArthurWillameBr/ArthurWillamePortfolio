@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "./ui/button";
-import { SocialMedia } from "./socialMedia";
+import { SocialMedia } from "./social-media";
 
 import { motion } from "framer-motion";
 
