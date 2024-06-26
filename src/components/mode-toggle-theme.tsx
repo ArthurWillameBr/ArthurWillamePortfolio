@@ -11,11 +11,11 @@ export function ModeToggle() {
   return (
     <>
       {theme === "dark" ? (
-        <Button className="w-full lg:bg-transparent lg:hover:bg-transparent"  onClick={() => setTheme("light")}>
+        <Button className="w-full lg:bg-transparent lg:hover:bg-transparent transition-none"  onClick={() => setTheme("light")}>
           <Sun size={24} className="lg:hover:mb-3 lg:transition-all "  />
         </Button>
       ) : (
-        <Button className= "w-full lg:bg-transparent lg:text-black lg:hover:bg-transparent" onClick={() => setTheme("dark")}>
+        <Button className= "w-full lg:bg-transparent lg:text-black lg:hover:bg-transparent transition-none" onClick={() => setTheme("dark")}>
           <Moon size={24} className="lg:hover:mb-3 lg:transition-all " />
         </Button>
       )}

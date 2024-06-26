@@ -21,7 +21,7 @@ const Profile = () => {
       <h3 className=" text-2xl lg:text-3xl font-semibold tracking-tight">
         Desenvolvedor <span className="text-primary dark:text-violet-600">Front-end</span>
       </h3>
-      <div className="w-96 lg:w-[40rem] px-5">
+      <div className="w-96 lg:w-[42rem] px-5">
         <p className="opacity-75 font-medium">
           Tive o meu primeiro contanto com linhas de código aos 17 anos,
           estudando javascript e lógica de programação. Essa experiência me
@@ -38,10 +38,10 @@ const Profile = () => {
         </div>
         <Button
           variant="outline"
-          className="relative inline-flex  items-center overflow-hidden transition-all group border-2 border-primary"
+          className="relative inline-flex transition-none items-center overflow-hidden transition-all group border-2 border-primary"
         >
-          <span className="w-64 h-48 rounded bg-primary absolute right-96 bottom-1 translate-x-full ease-out duration-500 transition-all translate-y-full mb-12 group-hover:translate-x-96"></span>
-          <span className="relative w-full text-left transition-colors duration-300 ease-in-out text-black group-hover:text-white dark:text-white uppercase font-semibold ">
+          <span className="w-64 h-48 rounded transition-none bg-primary absolute right-96 bottom-1 translate-x-full ease-out duration-500 transition-all translate-y-full mb-12 group-hover:translate-x-96"></span>
+          <span className="relative w-full text-left transition-none transition-colors duration-300 ease-in-out text-black group-hover:text-white dark:text-white uppercase font-semibold ">
             Curriculo
           </span>
         </Button>
