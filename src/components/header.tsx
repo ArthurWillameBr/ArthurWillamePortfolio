@@ -41,7 +41,6 @@ const Header = () => {
     }, 300);
   };
 
-
   return (
     <main className="flex justify-center">
       <motion.header
@@ -62,7 +61,12 @@ const Header = () => {
             <a className="text-base cursor-pointer" onClick={handleProjects}>
               Projetos
             </a>
-            <a className="text-base cursor-pointer mr-5" onClick={handleContact}>Contato</a>
+            <a
+              className="text-base cursor-pointer mr-5"
+              onClick={handleContact}
+            >
+              Contato
+            </a>
             <ModeToggle />
           </ul>
         </nav>
@@ -95,13 +99,15 @@ const Header = () => {
                     </Button>
                   </SheetClose>
 
-                  <Button
-                  onClick={() => handleSheetCloseAndScroll("contact")}
-                    variant="link"
-                    className="text-lg dark:text-violet-500"
-                  >
-                    Contato
-                  </Button>
+                  <SheetClose asChild>
+                    <Button
+                      onClick={() => handleSheetCloseAndScroll("contact")}
+                      variant="link"
+                      className="text-lg dark:text-violet-500"
+                    >
+                      Contato
+                    </Button>
+                  </SheetClose>
                   <div className="lg:hidden">
                     <ModeToggle />
                   </div>
