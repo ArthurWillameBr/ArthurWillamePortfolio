@@ -4,9 +4,9 @@ export interface ProjectsProps {
   id: string;
   name: string;
   description: string;
-  deployLink: string;
-  githubLink: string;
-  linkedinLink: string;
+  deployLink?: string;
+  githubLink?: string;
+  linkedinLink?: string;
   stacks: {
     src: string;
     width: number;
