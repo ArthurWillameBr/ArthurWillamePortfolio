@@ -39,37 +39,43 @@ export function CardProjects({ projects }: { projects: ProjectsProps[] }) {
                     <div className="flex items-center gap-4">
                       <Tooltip>
                         <TooltipTrigger asChild>
-                          <a
+                          {project.deployLink && (
+                            <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href={project.deployLink}
                           >
                             <LinkIcon className="size-5 mt-2 hover:scale-110" />
                           </a>
+                          )}
                         </TooltipTrigger>
                         <TooltipContent>Deploy</TooltipContent>
                       </Tooltip>
                       <Tooltip>
                         <TooltipTrigger asChild>
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={project.githubLink}
-                          >
-                            <Github className=" mt-2 hover:scale-110" />
-                          </a>
+                         {project.githubLink && (
+                           <a
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           href={project.githubLink}
+                         >
+                           <Github className=" mt-2 hover:scale-110" />
+                         </a>
+                         )}
                         </TooltipTrigger>
                         <TooltipContent>Repositório</TooltipContent>
                       </Tooltip>
                       <Tooltip>
                         <TooltipTrigger asChild>
-                          <a
+                          {project.linkedinLink && (
+                            <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href={project.linkedinLink}
                           >
                             <Linkedin className="size-5 mt-2 hover:scale-110" />
                           </a>
+                          )}
                         </TooltipTrigger>
                         <TooltipContent>Linkedin</TooltipContent>
                       </Tooltip>
