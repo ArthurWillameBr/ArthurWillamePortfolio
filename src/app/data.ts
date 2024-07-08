@@ -281,12 +281,6 @@ export const skills = [
     alt: "JavaScript",
   },
   {
-    src: "/Python-Dark.svg",
-    width: 800,
-    height: 600,
-    alt: "Python",
-  },
-  {
     src: "/React-Dark.svg",
     width: 800,
     height: 600,

@@ -38,10 +38,9 @@ const Profile = () => {
         </div>
         <Button
           variant="outline"
-          className="relative inline-flex transition-none items-center overflow-hidden transition-all group border-2 border-primary"
+          className="relative inline-flex items-center hover:bg-primary duration-500 overflow-hidden transition-all group border-[3px] border-primary"
         >
-          <span className="w-64 h-48 rounded transition-none bg-primary absolute right-96 bottom-1 translate-x-full ease-out duration-500 transition-all translate-y-full mb-12 group-hover:translate-x-96"></span>
-          <span className="relative w-full text-left transition-none transition-colors duration-300 ease-in-out text-black group-hover:text-white dark:text-white uppercase font-semibold ">
+          <span className="relative w-full text-left text-black group-hover:text-white dark:text-white uppercase font-semibold ">
             Curriculo
           </span>
         </Button>
